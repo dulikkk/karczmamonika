@@ -9,8 +9,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Source+Sans+Pro&display=swap&subset=latin-ext"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
+    <script defer src="js/slider.js"></script>
 </head>
 
 <body>
@@ -25,21 +27,30 @@
                 <li class="menu-contact"><a href="#contact" class="menu-list-anchor">Kontakt</a></li>
             </ul>
         </nav>
-        <h1 class="title">Karczma Monika</h1>
+        <!-- <h1 class="title">Karczma Monika</h1> -->
+        <div class="overlay-dots">
+            <button class="overlay-dots-dot overlay-dots-active" data-index="0"></button>
+            <button class="overlay-dots-dot" data-index="1"></button>
+            <button class="overlay-dots-dot" data-index="2"></button>
+        </div>
+        <i class="material-icons overlay-arrow overlay-left">
+            keyboard_arrow_left
+        </i>
+        <i class="material-icons overlay-arrow overlay-right">
+            keyboard_arrow_right
+        </i>
     </header>
     <main class="wrapper">
         <section class="who_we_are" id="who_we_are">
             <span class="section-second_title">O nas</span>
             <h2 class="who_we_are-title">Kim Jesteśmy</h2>
-            <p class="who_we_are-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis illum
-                ipsum minima. Neque magni
-                totam quaerat autem fuga sint rerum veniam? Officiis vel, necessitatibus error delectus ipsam, rem
-                exercitationem in fugit consequatur dolore eveniet rerum dicta cumque explicabo iusto ratione accusamus
-                praesentium cum qui quasi! Doloremque nostrum numquam doloribus repellat, quasi hic neque sint quas
-                tenetur ducimus et modi, officiis incidunt sed dolor. Ex qui mollitia veniam et ullam dolor officia
-                facilis, accusantium sunt voluptatem minus. At optio sint corporis ratione accusamus obcaecati! Magni
-                tempora velit eveniet. um quasi fugiat explicabo quaerat autem quos, necessitatibus hic
-                itaque inventore fugit temporibus quod officia.</p>
+            <p class="who_we_are-text">Jesteśmy resteuracją tworzoną z pasją z 13 letnim doświadczeniem. Oferujemy
+                usługi najwyższej jakości i naszą misją jest aby każdy klient wyszedł stąd z uśmiechem na twarzy. U nas
+                zjesz smacznie i do syta.
+                Karczma dysponuje trzema salami z możliwością oddzielenia ich od siebie, ogródkiem, altanką oraz
+                parkingiem. Sale są wyposażone w klimatyzacje oraz nagłośnienie. Zapraszamy na transmisje wydarzeń
+                sportowych oraz cotygodniowe sobotnie wieczorki taneczne. Rezerwacja stolika jest całkowicie bezpłatna
+                :)</p>
         </section>
         <section class="organize" id="organize">
             <span class="section-second_title">Co robimy</span>
@@ -87,7 +98,7 @@
                 </li>
                 <li class="organize-list-saturday organize-list-li">
                     <img src="img/cheers (3).png" alt="">
-                    <h3 class="saturday-title organize-list-title">Sobotnie Wieczorki</h3>
+                    <h3 class="saturday-title organize-list-title">Sobotnie Wieczorki Taneczne</h3>
                     <p class="saturday-text organize-list-text">Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. A voluptatum
                         fugit rerum excepturi
@@ -102,51 +113,83 @@
             <p class="happy_clients-text">Zorganizowaliśmy wiele przyjęć i obsłużyliśmy jeszcze więcej szcześliwych
                 klientów. A o to opinie
                 niektórych z nich</p>
-            <div class="happy_clients-opinion1">
-                <p class="happy_clients-opinion1-text">"Dwukrotnie korzystałem z roku na rok. Polecam za kontakt przy
+            <article class="happy_clients-opinion">
+                <p class="happy_clients-opinion-text">"Dwukrotnie korzystałem z roku na rok. Polecam za kontakt przy
                     umowie za profesjonalizm. Za smak
                     obsługe i duży profesjonalizm. Smacznie jak w domu i nie drogo.
                     Ja polecam. Super"</p>
-                <i class="material-icons">
+                <i class="material-icons grade">
                     grade
-                </i><i class="material-icons">
+                </i><i class="material-icons grade">
                     grade
-                </i><i class="material-icons">
+                </i><i class="material-icons grade">
                     grade
-                </i><i class="material-icons">
+                </i><i class="material-icons grade">
                     grade
-                </i><i class="material-icons">
+                </i><i class="material-icons grade">
                     grade
                 </i>
-                <p class="happy_clients-opinion1-customer">Piotr Korki</p>
-            </div>
+                <p class="happy_clients-opinion-customer">Piotr Korki</p>
+            </article>
+            <article class="happy_clients-opinion ">
+                <p class="happy_clients-opinion-text">"Super atmosfera, miła obsługa, dobre jedzenie, co sobota muzyka
+                    na
+                    żywo, duża elastyczność managera
+                    jeżeli chodzi o organizację imprez okolicznościowych"</p>
+                <i class="material-icons grade">
+                    grade
+                </i><i class="material-icons grade">
+                    grade
+                </i><i class="material-icons grade">
+                    grade
+                </i><i class="material-icons grade">
+                    grade
+                </i><i class="material-icons grade">
+                    grade
+                </i>
+                <p class="happy_clients-opinion-customer">Agnieszka Kwapień</p>
+            </article>
+            <article class="happy_clients-opinion">
+                <p class="happy_clients-opinion-text">"Świetny lokal i wspaniałe jedzenie. Szybka i miła obsługa.
+                    Polecamssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss!"
+                </p>
+                <i class="material-icons grade">
+                    grade
+                </i><i class="material-icons grade">
+                    grade
+                </i><i class="material-icons grade">
+                    grade
+                </i><i class="material-icons grade">
+                    grade
+                </i><i class="material-icons grade">
+                    grade
+                </i>
+                <p class="happy_clients-opinion-customer">Jolanta Wiechec</p>
+            </article>
             <i class="material-icons happy_clients-arrow happy_clients-left">
                 keyboard_arrow_left
             </i>
             <i class="material-icons happy_clients-arrow happy_clients-right">
                 keyboard_arrow_right
             </i>
-            <!-- <div class="happy_clients-opinion2">
-                <p>Jolanta Wiechec</p>
-                <p>Świetny Lokal Wspaniałe Jedzenie.Szybka i Mila Obsługa Polecam</p>
+            <div class="happy_clients-dots">
+                <button class="happy_clients-dots-dot happy_clients-dots-active" data-index="0"></button>
+                <button class="happy_clients-dots-dot" data-index="1"></button>
+                <button class="happy_clients-dots-dot" data-index="2"></button>
             </div>
-            <div class="happy_clients-opinion3">
-                <p>Agnieszka Kwapień</p>
-                <p>Super atmosfera,miła obsługa,dobre jedzenie,co sobota muzyka na żywo, duża elastyczność managera
-                    jeżeli chodzi o organizację imprez okolicznościowych</p>
-            </div> -->
         </section>
         <section class="galery" id="galery">
             <span class="section-second_title">Zdjecia</span>
             <h2 class="galery-title">Galeria</h2>
 
             <div class="galery-photo_wrapper">
-                <div class="galery-photo"><img src="img/glowna-sala.jpeg" alt="" class="galery-photo-img"></div>
+
                 <div class="galery-photo"><img src="img/glowna-sala-bar.jpeg" alt="" class="galery-photo-img"></div>
                 <div class="galery-photo"><img src="img/mala-sala.jpeg" alt="" class="galery-photo-img"></div>
                 <div class="galery-photo"><img src="img/glowna-sala-up.jpeg" alt="" class="galery-photo-img"></div>
                 <div class="galery-photo"><img src="img/glowna-sala.jpeg" alt="" class="galery-photo-img"></div>
-                <div class="galery-photo"><img src="img/budynek-noc.jpeg" alt="" class="galery-photo-img"></div>
+                <div class="galery-photo"><img src="img/biale-krzesla.jpeg" alt="" class="galery-photo-img"></div>
+                <!-- <div class="galery-photo"><img src="img/budynek-noc.jpeg" alt="" class="galery-photo-img"></div> -->
             </div>
         </section>
         <section class="contact" id="contact">
@@ -168,14 +211,14 @@
                         <h3 class="information-reservation-title">Chcesz dokonać rezerwacji albo dowiedzieć się
                             więcej?
                             Zadzwoń pod wybrany numer:</h3>
-                        <p class="information-reservation-number1">32 307 35 82</p>
-                        <p class="information-reservation-number2">530 273 481</p>
-                        <p class="information-reservation-number3">502 724 379</p>
+                        <p class="information-reservation-number information-reservation-number1">530 273 481</p>
+                        <p class="information-reservation-number">32 307 35 82</p>
+                        <p class="information-reservation-number">502 724 379</p>
                     </div>
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5100.022583322853!2d19.175880467816096!3d50.273047771773314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716db21b4990139%3A0xfda55ca7a2c4ae4a!2sMonika.%20Karczma!5e0!3m2!1spl!2spl!4v1572098881769!5m2!1spl!2spl"
-                    width="850" height="720" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    width="850" height="701" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
 
         </section>
@@ -194,6 +237,8 @@
         <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from
             <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
