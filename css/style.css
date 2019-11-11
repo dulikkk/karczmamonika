@@ -6,13 +6,17 @@
 }
 
 .overlay{
-    position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../img/glowna-sala.jpeg);
-    background-repeat: no-repeat;
-    animation: slider 15s linear infinite 0s;
-    animation-timing-function: ease-in-out;
+}
+
+div.ima{
+ 
+}
+div.ima img{
+    max-width: 100%;
+    width: 100%;
+    height: 1000px;
 }
 
 .title{
