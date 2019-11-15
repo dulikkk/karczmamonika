@@ -1,11 +1,12 @@
 $('.overlay-photos').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
     prevArrow: $('.overlay-left'),
     nextArrow: $('.overlay-right'),
-    dots: false,
+    dots: true,
     infinite: true,
-    speed: 600,
+    speed: 800,
     fade: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    pauseOnHover: false,
     cssEase: 'linear'
 });
