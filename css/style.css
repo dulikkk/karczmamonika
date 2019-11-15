@@ -393,6 +393,10 @@ article.happy_clients-active_opinion{
     text-align: center;
 }
 
+.information-opening_hours-title{
+    margin-bottom: 18px;
+}
+
 .content-information-opening_hours *,
 .information-reservation-number{
     font-size: 30px;
@@ -400,17 +404,22 @@ article.happy_clients-active_opinion{
 }
 
 .content-information-reservation{
-    font-size: 20px;
     margin-top: 10%;
+
+    font-size: 20px;
+   
+}
+
+.information-reservation-title{
+    padding: 0 20px;
+    margin-bottom: 18px;
 }
 
 .information-reservation-number1{
     font-weight: bold;
 }
 
-.information-reservation-title{
-    padding: 0 20px;
-}
+
 
 footer{
     display: flex;
@@ -580,6 +589,10 @@ footer *{
         .organize-list>*{
             flex-basis: 51%;
         }
+        .organize-list-wedding,
+        .organize-list-communion{
+            margin-top: 40px;
+        }
         .section-title{
             font-size: 50px;
         }
@@ -587,7 +600,13 @@ footer *{
             font-size: 60px;
         }
         .happy_clients-title{
-            font-size: 40px;
+            font-size: 46px;
+        }
+        .happy_clients-text{
+            font-size: 20px;
+        }
+        .happy_clients-opinion-text{
+            font-size: 20px;
         }
 
         footer{
@@ -599,6 +618,9 @@ footer *{
         .site-title a,
         .site-title a:hover{
             font-size: 24px;
+        }
+        .site-title{
+            margin-top: 5px;
         }
         .slider-title-sylvester{
             padding-top: 33vh;
@@ -635,6 +657,9 @@ footer *{
         .happy_clients .section-second_title{
             font-size: 40px;
         }
+        .happy_clients-text{
+            font-size: 19px;
+        }
     }
 
 
@@ -665,6 +690,9 @@ footer *{
 
 
      @media(max-width:310px){
+        .site-title{
+            margin-top: -2px;
+        }
         .site-title a,
         .site-title a:hover{
             font-size: 18px;
