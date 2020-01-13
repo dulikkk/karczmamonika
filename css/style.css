@@ -7,10 +7,11 @@
 
 .site-title{
     position: absolute;
+    z-index: 10;
     padding: 6px 0 0 40px;
 }
 
-.site-title a{
+.site-title__anchor{
     text-decoration: none;
     font-size: 34px;
     font-family: 'Alex Brush', cursive;
@@ -20,11 +21,13 @@
     cursor: pointer;
 }
 
-.site-title a:hover{
+.site-title__anchor:hover{
     font-size: 45px;
 }
 
-.overlay-photos div{
+.photos__first,
+.photos__second,
+.photos__third{
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -32,39 +35,27 @@
     background-size: cover;
 }
 
-.overlay-photos-first{
+.photos__first{
     background-image: url(../img/sylwester.png);
 }
 
-.overlay-photos-second{
+.photos__second{
     background-image: url(../img/glowna-sala.jpeg);
 }
 
-.overlay-photos-third{
+.photos__third{
     background-image: url(../img/budynek-noc.jpeg);
 }
 
-.slider-title{
-    text-align: center;
-    font-size: 180px;
-    padding-top: 30vh;  
+.photos__title{
+    position: absolute;
+    z-index: 1;
+    top: 32%;
+    left: 18%;
+    font-size: 180px; 
     font-family: 'Alex Brush', cursive;
     color: #fff;
     text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-.slider-title-sylvester{
-    text-align: center;
-    font-size: 120px;
-    padding-top: 20vh;  
-    font-family: cursive;
-    color: #fff;
-    text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-.slider-title-sylvester span{
-    display: block;
-    font-family: cursive;
 }
 
 .slick-dots {
@@ -110,11 +101,11 @@ li.slick-active button {
     cursor: pointer;
 }
 
-.overlay-left{
+.photos__arrow-left{
     left: 0;
 }
 
-.overlay-right{
+.photos__arrow-right{
     right: 0;
 }
 
@@ -127,7 +118,7 @@ li.slick-active button {
     max-height: 20%;  
 }
 
-.fixed_menu{
+.fixed-menu{
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -139,10 +130,10 @@ li.slick-active button {
     animation: menu .2s linear;
 }
 
-.hamburger{
+.menu__hamburger{
     display: none;
 }
-.hamburger_inner{
+.menu__hamburger-inner{
     color: #fff;
 }
 

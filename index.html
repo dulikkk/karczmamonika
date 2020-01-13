@@ -15,46 +15,53 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
     <script defer src="js/slider.js"></script>
+    <meta name="google-site-verification" content="aUpJy6s2w-Ae1YZMSh75DUUgb_ZmqtiMB2TGnYqmers" />
 </head>
 
 <body>
     <header class="overlay">
         <nav class="menu">
-            <h1 class="site-title"><a href="">Karczma Monika</a></h1>
-            <button class="hamburger">
-                <i class="material-icons hamburger_inner">
+            <h1 class="site-title">
+                <a href="" class="site-title__anchor">Karczma Monika</a>
+            </h1>
+            <button class="hamburger menu__hamburger">
+                <i class="material-icons hamburger-inner menu__hamburger-inner">
                     menu
                 </i>
             </button>
-            <ul class="menu-list">
-                <li class="menu-who_we_are"><a href="#who_we_are" class="menu-list-anchor">Kim jesteśmy</a></li>
-                <li class="menu-organize"><a href="#organize" class="menu-list-anchor">Organizujemy</a></li>
-                <li class="menu-happy_clients"><a href="#happy_clients" class="menu-list-anchor">Zadowoleni Klienci</a>
+            <ul class="menu-list menu__list">
+                <li class="menu-who_we_are menu__who-we-are">
+                    <a href="#who_we_are" class="menu-list-anchor menu__list-anchor">Kim jesteśmy</a>
                 </li>
-                <li class="menu-galery"><a href="#galery" class="menu-list-anchor">Galeria</a></li>
-                <li class="menu-contact"><a href="#contact" class="menu-list-anchor">Kontakt</a></li>
+                <li class="menu-organize menu__organize">
+                    <a href="#organize" class="menu-list-anchor menu__list-anchor">Organizujemy</a>
+                </li>
+                <li class="menu-happy_clients">
+                    <a href="#happy_clients" class="menu-list-anchor menu__list-anchor">Zadowoleni Klienci</a>
+                </li>
+                <li class="menu-galery menu__galery">
+                    <a href="#galery" class="menu-list-anchor menu__list-anchor">Galeria</a>
+                </li>
+                <li class="menu-contact menu__contact">
+                    <a href="#contact" class="menu-list-anchor menu__list-anchor">Kontakt</a>
+                </li>
             </ul>
-
         </nav>
 
-        <div class="overlay-photos">
-            <div class="overlay-photos-first">
-                <h2 class="slider-title-sylvester">Zapraszamy <br> na bal sylwestrowy <br>Telefon: 530 273
-                    481</h2>
+        <div class="photos">
+            <h2 class="slider-title photos__title">Karczma monika</h2>
+            <div class="overlay-photos photos__container">
+                <div class="overlay-photos-first photos__first"> </div>
+                <div class="overlay-photos-second photos__second"> </div>
+                <div class="overlay-photos-third photos__third"> </div>
             </div>
-            <div class="overlay-photos-second">
-                <h2 class="slider-title">Karczma Monika</h2>
-            </div>
-            <div class="overlay-photos-third">
-                <h2 class="slider-title">Karczma Monika</h2>
-            </div>
+            <i class="material-icons overlay-arrow overlay-left photos__arrow-left">
+                keyboard_arrow_left
+            </i>
+            <i class="material-icons overlay-arrow overlay-right photos__arrow-right">
+                keyboard_arrow_right
+            </i>
         </div>
-        <i class="material-icons overlay-arrow overlay-left">
-            keyboard_arrow_left
-        </i>
-        <i class="material-icons overlay-arrow overlay-right">
-            keyboard_arrow_right
-        </i>
     </header>
     <main class="wrapper">
         <section class="who_we_are" id="who_we_are">

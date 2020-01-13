@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (document.body.scrollTop > 950 && window.innerWidth > 1250 || document.documentElement.scrollTop > 950 && window.innerWidth > 1250) {
             nav.classList.remove('menu');
-            nav.classList.add('fixed_menu');
+            nav.classList.add('fixed-menu');
             for (const a of links) {
                 a.style.color = "#000";
                 a.style.textShadow = "none";
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             siteTitle.style.paddingTop = "23px";
         }
         else {
-            nav.classList.remove('fixed_menu');
+            nav.classList.remove('fixed-menu');
             nav.classList.add('menu');
             for (const a of links) {
                 a.style.color = "#fff";
