@@ -170,6 +170,9 @@ li.slick-active button {
     color: #333;
 }
 
+
+
+
 .wrapper>*{
     position: relative;
 
@@ -179,13 +182,13 @@ li.slick-active button {
     align-items: center;
 }
 
-.who_we_are{
+.who-we-are{
     padding: 110px 0;
 
     background-color: #F8F9FA;
 }
 
-.who_we_are-text{
+.who-we-are__text{
     padding: 30px 17% 0;
 
     line-height: 30px;
@@ -209,7 +212,7 @@ li.slick-active button {
     color: #CF1D16;
 }
 
-.organize-list{
+.organize__list{
     width: 100%;
 
     margin-top: 70px;
@@ -221,26 +224,26 @@ li.slick-active button {
     list-style: none;
 }
 
-.organize-list>*{
+.organize__list>*{
     flex-basis: 30%;
 }
 
-.organize-list *{
+.organize__list *{
     text-align: center;
 }
 
-.organize-list-li *{
+.organize__li *{
     margin-top: 30px;
 }
 
-.organize-list-title{
+.organize__list-title{
     font-size: 30px;
     color: #222;
 }
 
-.organize-list-ceremony,
-.organize-list-funeral,
-.organize-list-saturday{
+.organize__ceremony,
+.organize__funeral,
+.organize__saturdays{
     margin-top: 60px;
 }
 
@@ -548,19 +551,19 @@ footer *{
         .slider-title-sylvester{
             font-size: 70px;
         }
-        .organize-list>*{
+        .organize__list>*{
             margin-top: 40px;
 
             flex-basis: 41%;
             
         }
-        .organize-list-ceremony,
-        .organize-list-funeral,
-        .organize-list-saturday{
+        .organize__ceremony,
+        .organize__funeral,
+        .organize__saturdays{
         margin-top: 40px;
             }
-        .organize-list-wedding,
-        .organize-list-communion{
+        .organize__wedding,
+        .organize__list-communion{
             margin-top: 0;
         }
 
@@ -577,11 +580,11 @@ footer *{
     }
 
     @media(max-width:600px){
-        .organize-list>*{
+        .organize__list>*{
             flex-basis: 51%;
         }
-        .organize-list-wedding,
-        .organize-list-communion{
+        .organize__wedding,
+        .organize__list-communion{
             margin-top: 40px;
         }
         .section-title{
