@@ -36,11 +36,12 @@
 }
 
 .photos__first{
-    background-image: url(../img/sylwester.png);
+    background-image: url(../img/glowna-sala.jpeg);
+  
 }
 
 .photos__second{
-    background-image: url(../img/glowna-sala.jpeg);
+    background-image: url(../img/glowna-sala-bar.jpeg);
 }
 
 .photos__third{
@@ -259,7 +260,7 @@ li.slick-active button {
     background-color: #F8F9FA;
 }
 
-.happy_clients-text{
+.happy-clients__text{
     padding: 0 8%;
     margin-top: 30px;
 
@@ -268,24 +269,24 @@ li.slick-active button {
     color: #444;   
 }
 
-.happy_clients-opinion{
+.opinion{
     margin-top: 60px;
 
     display: none;
     text-align: center;
 }
 
-.happy_clients-opinion *{
+.opinion *{
     margin-top: 10px;
 }
 
-.happy_clients-opinion-text{
+.opinion__text{
     padding: 0 8%;
 
     font-size: 25px; 
 }
 
-.happy_clients-opinion-customer{
+.opinion__reviewer{
     font-size: 20px;
 }
 
@@ -293,7 +294,7 @@ li.slick-active button {
     color: #CF1D16;
 }
 
-.happy_clients-arrow{
+.opinions__arrow{
     position: absolute;
     top: 54%;
 
@@ -301,10 +302,10 @@ li.slick-active button {
     color: #CF1D16;
     cursor: pointer;
 }
-.happy_clients-left{
+.opinions__left-arrow{
     left: 0;
 }
-.happy_clients-right{
+.opinions__right-arrow{
     right: 0;
 }
 
@@ -313,13 +314,13 @@ article.happy_clients-active_opinion{
     animation: menu 1s linear;
 }
 
-.happy_clients-dots{
+.opinions__dots{
     position: absolute;
     top: 90%;
     left: 48%;
 }
 
-.happy_clients-dots-dot{
+.opinions__dot{
     width: 12px;
     height: 12px;
 
@@ -331,7 +332,7 @@ article.happy_clients-active_opinion{
     cursor: pointer;
 }
 
-.happy_clients-dots-active{
+.opinions__dot--active{
     background-color: #CF1D16;
 }
 
@@ -525,7 +526,7 @@ footer *{
     .menu-list--active{
         transform: translateY(0);
     }
-    .happy_clients-arrow{    
+    .opinions__arrow{    
         top: 65%;
 
         font-size: 50px;
@@ -593,13 +594,13 @@ footer *{
         .section-second_title{
             font-size: 60px;
         }
-        .happy_clients-title{
+        .happy-clients__title{
             font-size: 46px;
         }
         .happy_clients-text{
             font-size: 20px;
         }
-        .happy_clients-opinion-text{
+        .opinion-text{
             font-size: 20px;
         }
 
@@ -630,10 +631,10 @@ footer *{
         .content-information-reservation *{
             font-size: 20px;
         }
-        .happy_clients-arrow{
+        .opinions__arrow{
             top: 80%;
         }
-        .happy_clients-dots{
+        .opinions__dots{
             display: none;
         }
     }
@@ -644,7 +645,7 @@ footer *{
         .menu-list li a:hover{
             font-size: 16px;
         }
-        .happy_clients-title{
+        .happy-clients__title{
             font-size: 30px;
         }
 
@@ -667,7 +668,7 @@ footer *{
         .section-second_title{
             font-size: 50px;
         }
-        .happy_clients-title{
+        .happy-clients__title{
             font-size: 30px;
         }
     }
@@ -677,7 +678,7 @@ footer *{
         .site-title{
             padding: 2px 0 0 10px;
         }
-        .happy_clients-arrow{
+        .opinions__arrow{
             top: 90%;
         }
     }

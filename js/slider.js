@@ -75,12 +75,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const HappyClientsParams = {
-        leftClass: ".happy_clients-left",
-        rightClass: ".happy_clients-right",
-        slidesClass: ".happy_clients-opinion",
+        leftClass: ".opinions__left-arrow",
+        rightClass: ".opinions__right-arrow",
+        slidesClass: ".opinion",
         activeSlidesClass: "happy_clients-active_opinion",
-        dotsClass: ".happy_clients-dots-dot",
-        activeDotsClass: "happy_clients-dots-active"
+        dotsClass: ".opinions__dot",
+        activeDotsClass: "opinions__dot--active"
     }
 
     const MainSliderParams = {
