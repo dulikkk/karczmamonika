@@ -5,12 +5,17 @@
     font-family: 'Source Sans Pro', arial, sans-serif;
 }
 
+ul{
+   list-style: none; 
+}
+
 .site-title{
     position: absolute;
+    z-index: 10;
     padding: 6px 0 0 40px;
 }
 
-.site-title a{
+.site-title__anchor{
     text-decoration: none;
     font-size: 34px;
     font-family: 'Alex Brush', cursive;
@@ -20,11 +25,13 @@
     cursor: pointer;
 }
 
-.site-title a:hover{
+.site-title__anchor:hover{
     font-size: 45px;
 }
 
-.overlay-photos div{
+.photos__first,
+.photos__second,
+.photos__third{
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -32,39 +39,28 @@
     background-size: cover;
 }
 
-.overlay-photos-first{
-    background-image: url(../img/sylwester.png);
-}
-
-.overlay-photos-second{
+.photos__first{
     background-image: url(../img/glowna-sala.jpeg);
+  
 }
 
-.overlay-photos-third{
+.photos__second{
+    background-image: url(../img/glowna-sala-bar.jpeg);
+}
+
+.photos__third{
     background-image: url(../img/budynek-noc.jpeg);
 }
 
-.slider-title{
-    text-align: center;
-    font-size: 180px;
-    padding-top: 30vh;  
+.photos__title{
+    position: absolute;
+    z-index: 1;
+    top: 32%;
+    left: 18%;
+    font-size: 180px; 
     font-family: 'Alex Brush', cursive;
     color: #fff;
     text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-.slider-title-sylvester{
-    text-align: center;
-    font-size: 120px;
-    padding-top: 20vh;  
-    font-family: cursive;
-    color: #fff;
-    text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-.slider-title-sylvester span{
-    display: block;
-    font-family: cursive;
 }
 
 .slick-dots {
@@ -102,7 +98,7 @@ li.slick-active button {
     background-color: #CF1D16;
 }
 
-.overlay-arrow{
+.photos__arrow{
     position: absolute;
     top: 45%;
     color: #ccc;
@@ -110,26 +106,26 @@ li.slick-active button {
     cursor: pointer;
 }
 
-.overlay-left{
+.photos__arrow-left{
     left: 0;
 }
 
-.overlay-right{
+.photos__arrow-right{
     right: 0;
 }
 
 .menu{ 
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100vw;  
     max-height: 20%;  
 }
 
-.fixed_menu{
+.fixed-menu{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: 80px;
     top: 0;
@@ -139,26 +135,25 @@ li.slick-active button {
     animation: menu .2s linear;
 }
 
-.hamburger{
+.menu__hamburger{
     display: none;
 }
-.hamburger_inner{
+.menu__hamburger-inner{
     color: #fff;
 }
 
-.menu-list{
+.menu__list{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    list-style: none;
 }
 
-.menu-list li{
+.menu__list li{
     margin-left: 50px;
 }
 
-.menu-list li a{
+.menu__list-anchor{
     padding: 5px;
 
     font-size: 30px;
@@ -170,14 +165,17 @@ li.slick-active button {
     transition: .3s;
 }
 
-.menu-list li a:hover{
+.menu__list-anchor:hover{
     font-size: 40px;
 }
 
-.section-title{
+.section__title{
     font-size: 60px;
     color: #333;
 }
+
+
+
 
 .wrapper>*{
     position: relative;
@@ -188,13 +186,13 @@ li.slick-active button {
     align-items: center;
 }
 
-.who_we_are{
+.who-we-are{
     padding: 110px 0;
 
     background-color: #F8F9FA;
 }
 
-.who_we_are-text{
+.who-we-are__text{
     padding: 30px 17% 0;
 
     line-height: 30px;
@@ -212,13 +210,13 @@ li.slick-active button {
     padding: 110px 0;
 }
 
-.section-second_title{ 
+.section__second-title{ 
     font-size: 70px;
     font-family: 'Alex Brush', cursive;
     color: #CF1D16;
 }
 
-.organize-list{
+.organize__list{
     width: 100%;
 
     margin-top: 70px;
@@ -230,26 +228,26 @@ li.slick-active button {
     list-style: none;
 }
 
-.organize-list>*{
+.organize__list>*{
     flex-basis: 30%;
 }
 
-.organize-list *{
+.organize__list *{
     text-align: center;
 }
 
-.organize-list-li *{
+.organize__li *{
     margin-top: 30px;
 }
 
-.organize-list-title{
+.organize__list-title{
     font-size: 30px;
     color: #222;
 }
 
-.organize-list-ceremony,
-.organize-list-funeral,
-.organize-list-saturday{
+.organize__ceremony,
+.organize__funeral,
+.organize__saturdays{
     margin-top: 60px;
 }
 
@@ -257,7 +255,7 @@ li.slick-active button {
 
 
 
-.happy_clients{
+.happy-clients{
     position: relative;
 
     padding: 110px 0 100px;
@@ -265,7 +263,7 @@ li.slick-active button {
     background-color: #F8F9FA;
 }
 
-.happy_clients-text{
+.happy-clients__text{
     padding: 0 8%;
     margin-top: 30px;
 
@@ -274,24 +272,24 @@ li.slick-active button {
     color: #444;   
 }
 
-.happy_clients-opinion{
+.opinion{
     margin-top: 60px;
 
     display: none;
     text-align: center;
 }
 
-.happy_clients-opinion *{
+.opinion *{
     margin-top: 10px;
 }
 
-.happy_clients-opinion-text{
+.opinion__text{
     padding: 0 8%;
 
     font-size: 25px; 
 }
 
-.happy_clients-opinion-customer{
+.opinion__reviewer{
     font-size: 20px;
 }
 
@@ -299,7 +297,7 @@ li.slick-active button {
     color: #CF1D16;
 }
 
-.happy_clients-arrow{
+.opinions__arrow{
     position: absolute;
     top: 54%;
 
@@ -307,25 +305,25 @@ li.slick-active button {
     color: #CF1D16;
     cursor: pointer;
 }
-.happy_clients-left{
+.opinions__left-arrow{
     left: 0;
 }
-.happy_clients-right{
+.opinions__right-arrow{
     right: 0;
 }
 
-article.happy_clients-active_opinion{
+article.opinion--active{
     display: block;
     animation: menu 1s linear;
 }
 
-.happy_clients-dots{
+.opinions__dots{
     position: absolute;
     top: 90%;
     left: 48%;
 }
 
-.happy_clients-dots-dot{
+.opinions__dot{
     width: 12px;
     height: 12px;
 
@@ -337,7 +335,7 @@ article.happy_clients-active_opinion{
     cursor: pointer;
 }
 
-.happy_clients-dots-active{
+.opinions__dot--active{
     background-color: #CF1D16;
 }
 
@@ -349,17 +347,17 @@ article.happy_clients-active_opinion{
     padding-top: 110px;
 }
 
-.galery-photo-img{
+.galery__img{
     width: 100%;
     height: auto;
 }
 
-.galery-photo{
+.galery__photo{
     flex-basis: 45%;
     margin-top: 50px;
 }
 
-.galery-photo_wrapper{
+.galery__photos{
     margin: 30px 0 110px;
 
     display: flex;
@@ -376,7 +374,7 @@ article.happy_clients-active_opinion{
     background-color: #F8F9FA;
 }
 
-.contact-content{
+.contact__content{
     width: 100%;
 
     margin-top: 60px;
@@ -386,36 +384,36 @@ article.happy_clients-active_opinion{
     align-items: flex-start;
 }
 
-.contact-content-information{
+.contact__information{
 
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.information-opening_hours-title{
+.opening-hours__title{
     margin-bottom: 18px;
 }
 
-.content-information-opening_hours *,
-.information-reservation-number{
+.opening-hours *,
+.reservation__number{
     font-size: 30px;
     margin-top: 5px;
 }
 
-.content-information-reservation{
+.reservation{
     margin-top: 10%;
 
     font-size: 20px;
    
 }
 
-.information-reservation-title{
+.reservation__title{
     padding: 0 20px;
     margin-bottom: 18px;
 }
 
-.information-reservation-number1{
+.reservation__number--main{
     font-weight: bold;
 }
 
@@ -428,7 +426,7 @@ footer{
     background-color: #000;
 }
 
-.footer-icons{
+.page-information__icons{
     width: 50%;
     height: 100%;
     display: flex;
@@ -437,16 +435,11 @@ footer{
     flex-wrap: wrap;
 }
 
-footer *{
+.page-information *{
     font-size: 10px;
     color: #888;
 }
-
-.visitors_counter{
-    display: none;
-}
-
-.site_author, .site_author a{
+.page-information__author, .page-information__author-name{
     font-size: 10px;
     margin-right: 10px;
 }
@@ -462,16 +455,16 @@ footer *{
 }
 
 @media(max-width:1600px){
-    .menu-list{
+    .menu__list{
         justify-content: flex-end;
 
         padding-right: 3%;
     }
-    .menu-list li a{
+    .menu__list-anchor{
     font-size: 25px;
     }
 
-    .map{
+    .contact__map{
         width: 600px;
 
         margin-right: 10px;
@@ -480,16 +473,13 @@ footer *{
 
 
 @media(max-width:1250px){
-    .slider-title{
+    .slider__title{
         font-size: 140px;
     }
-    .site-title a:hover{
+    .site-title__anchor:hover{
         font-size: 34px;
     }
-    .slider-title-sylvester{
-        font-size: 90px;
-    }
-    .hamburger{
+    .menu__hamburger{
         display: inline-block;
 
         margin-right: 20px;
@@ -499,7 +489,7 @@ footer *{
         cursor: pointer;
         
     }
-    .hamburger_inner{
+    .menu__hamburger-inner{
         font-size: 50px;
     }
     .menu{
@@ -508,30 +498,30 @@ footer *{
         text-align: right;
         background-color: #000;     
     }
-    .menu-list{  
+    .menu__list{  
         flex-direction: column;
 
         background-color: #000;
         transition: transform .2s ease-in-out;
         transform: translateY(-700px);
     }
-    .menu-list li{
+    .menu__list li{
         width: 100%;
         padding: 20px 0;
         border-bottom: 1px solid #fff;
 
         text-align: center;              
     }
-    .menu-list li a{
+    .menu__list-anchor{
         display: block;
         width: 100%;
 
         font-size: 30px;       
     }
-    .menu-list--active{
+    .menu__list--active{
         transform: translateY(0);
     }
-    .happy_clients-arrow{    
+    .opinions__arrow{    
         top: 65%;
 
         font-size: 50px;
@@ -540,13 +530,13 @@ footer *{
 
 
     @media(max-width:1024px){
-        .contact-content{
+        .contact__content{
             flex-direction: column;
         }
-        .contact-content-information{
+        .contact__information{
             width: 100%;
         }
-        .map{
+        .contact__map{
             width: 85%;
 
             margin: 50px auto 0;
@@ -554,58 +544,55 @@ footer *{
     }
 
     @media(max-width:900px){
-        .slider-title-sylvester{
-            font-size: 70px;
-        }
-        .organize-list>*{
+        .organize__list>*{
             margin-top: 40px;
 
             flex-basis: 41%;
             
         }
-        .organize-list-ceremony,
-        .organize-list-funeral,
-        .organize-list-saturday{
+        .organize__ceremony,
+        .organize__funeral,
+        .organize__saturdays{
         margin-top: 40px;
             }
-        .organize-list-wedding,
-        .organize-list-communion{
+        .organize__wedding,
+        .organize__list-communion{
             margin-top: 0;
         }
 
-        .galery-photo{
+        .galery__photo{
             flex-basis: 90%;
         }
     }
 
 
     @media(max-width:620px){
-        .slider-title{
+        .slider__title{
             font-size: 90px;
         }
     }
 
     @media(max-width:600px){
-        .organize-list>*{
+        .organize__list>*{
             flex-basis: 51%;
         }
-        .organize-list-wedding,
-        .organize-list-communion{
+        .organize__wedding,
+        .organize__list-communion{
             margin-top: 40px;
         }
-        .section-title{
+        .section__title{
             font-size: 50px;
         }
-        .section-second_title{
+        .section__second-title{
             font-size: 60px;
         }
-        .happy_clients-title{
+        .happy-clients__title{
             font-size: 46px;
         }
-        .happy_clients-text{
+        .happy-clients__text{
             font-size: 20px;
         }
-        .happy_clients-opinion-text{
+        .opinion__text{
             font-size: 20px;
         }
 
@@ -615,65 +602,60 @@ footer *{
     }
 
     @media(max-width:500px){
-        .site-title a,
-        .site-title a:hover{
+        .site-title__anchor,
+        .site-title__anchor:hover{
             font-size: 24px;
         }
         .site-title{
             margin-top: 5px;
         }
-        .slider-title-sylvester{
-            padding-top: 33vh;
-
-            font-size: 40px;         
-        }
-        .hamburger_inner{
+        .menu__hamburger-inner{
             padding: 10px 0;
 
             font-size: 35px;        
         }
-        .content-information-opening_hours *,
-        .content-information-reservation *{
+        .opening-hours *,
+        .reservation *{
             font-size: 20px;
         }
-        .happy_clients-arrow{
+        .opinions__arrow{
             top: 80%;
         }
-        .happy_clients-dots{
+        .opinions__dots{
             display: none;
         }
     }
 
 
     @media(max-width:410px){
-        .menu-list li a,
-        .menu-list li a:hover{
+        .menu__list-anchor,
+        .menu__list-anchor:hover{
             font-size: 16px;
         }
-        .happy_clients-title{
+        .happy-clients__title{
             font-size: 30px;
         }
 
-        .happy_clients .section-second_title{
-            font-size: 45px;
+        .happy-clients .section__second-title{
+            font-size: 40px;
         }
-        .happy_clients-text{
-            font-size: 18px;
+        .happy-clients__text{
+            font-size: 19px;
         }
     }
 
 
     @media(max-width:380px){
-        .slider-title{
+        .slider__title{
             font-size: 60px;
         }
-        .section-title{
+        .section__title{
             font-size: 40px;
         }
-        .section-second_title{
+        .section__second-title{
             font-size: 50px;
         }
-        .happy_clients-title{
+        .happy-clients__title{
             font-size: 30px;
         }
     }
@@ -683,7 +665,7 @@ footer *{
         .site-title{
             padding: 2px 0 0 10px;
         }
-        .happy_clients-arrow{
+        .opinions__arrow{
             top: 90%;
         }
     }
@@ -693,11 +675,11 @@ footer *{
         .site-title{
             margin-top: -2px;
         }
-        .site-title a,
-        .site-title a:hover{
+        .site-title__anchor,
+        .site-title__anchor:hover{
             font-size: 18px;
         }
-        .hamburger_inner{
+        .menu__hamburger-inner{
             font-size: 23px;
         }
     }

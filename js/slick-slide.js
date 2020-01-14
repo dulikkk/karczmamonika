@@ -1,8 +1,8 @@
-$('.overlay-photos').slick({
+$('.photos__container').slick({
     autoplay: true,
     autoplaySpeed: 4000,
-    prevArrow: $('.overlay-left'),
-    nextArrow: $('.overlay-right'),
+    prevArrow: $('.photos__arrow-left'),
+    nextArrow: $('.photos__arrow-right'),
     dots: true,
     infinite: true,
     speed: 800,
