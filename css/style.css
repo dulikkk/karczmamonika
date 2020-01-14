@@ -11,7 +11,7 @@ ul{
 
 .site-title{
     position: absolute;
-    z-index: 10;
+    z-index: 2;
     padding: 6px 0 0 40px;
 }
 
@@ -100,6 +100,7 @@ li.slick-active button {
 
 .photos__arrow{
     position: absolute;
+    z-index: 3;
     top: 45%;
     color: #ccc;
     font-size: 50px;
