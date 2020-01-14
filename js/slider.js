@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    function sleep(ms) {
-        var now = new Date().getTime();
-        while (new Date().getTime() < now + ms);
-    }
-
     const Slider = function (options) {
         this.params = options;
         this.currentSlide = 0;
@@ -78,19 +73,9 @@ document.addEventListener('DOMContentLoaded', function () {
         leftClass: ".opinions__left-arrow",
         rightClass: ".opinions__right-arrow",
         slidesClass: ".opinion",
-        activeSlidesClass: "happy_clients-active_opinion",
+        activeSlidesClass: "opinion--active",
         dotsClass: ".opinions__dot",
         activeDotsClass: "opinions__dot--active"
     }
-
-    const MainSliderParams = {
-        leftClass: ".overlay-left",
-        rightClass: ".overlay-right",
-        slidesClass: ".overlay",
-        activeSlidesClass: "none",
-        dotsClass: ".overlay-dots-dot",
-        activeDotsClass: "overlay-dots-active"
-    }
     const happyClientsSlider = new Slider(HappyClientsParams);
-    // const MainSlider = new Slider(MainSliderParams);
 })

@@ -24,49 +24,49 @@
             <h1 class="site-title">
                 <a href="" class="site-title__anchor">Karczma Monika</a>
             </h1>
-            <button class="hamburger menu__hamburger">
+            <button class="menu__hamburger">
                 <i class="material-icons hamburger-inner menu__hamburger-inner">
                     menu
                 </i>
             </button>
-            <ul class="menu-list menu__list">
+            <ul class="menu__list">
                 <li class="menu-who_we_are menu__who-we-are">
-                    <a href="#who-we-are" class="menu-list-anchor menu__list-anchor">Kim jesteśmy</a>
+                    <a href="#who-we-are" class="menu__list-anchor">Kim jesteśmy</a>
                 </li>
                 <li class="menu-organize menu__organize">
-                    <a href="#organize" class="menu-list-anchor menu__list-anchor">Organizujemy</a>
+                    <a href="#organize" class="menu__list-anchor">Organizujemy</a>
                 </li>
                 <li class="menu-happy_clients">
-                    <a href="#happy_clients" class="menu-list-anchor menu__list-anchor">Zadowoleni Klienci</a>
+                    <a href="#happy-clients" class="menu__list-anchor">Zadowoleni Klienci</a>
                 </li>
                 <li class="menu-galery menu__galery">
-                    <a href="#galery" class="menu-list-anchor menu__list-anchor">Galeria</a>
+                    <a href="#galery" class="menu__list-anchor">Galeria</a>
                 </li>
                 <li class="menu-contact menu__contact">
-                    <a href="#contact" class="menu-list-anchor menu__list-anchor">Kontakt</a>
+                    <a href="#contact" class="menu__list-anchor">Kontakt</a>
                 </li>
             </ul>
         </nav>
 
         <div class="photos">
-            <h2 class="slider-title photos__title">Karczma monika</h2>
-            <div class="overlay-photos photos__container">
-                <div class="overlay-photos-first photos__first"> </div>
-                <div class="overlay-photos-second photos__second"> </div>
-                <div class="overlay-photos-third photos__third"> </div>
+            <h2 class="slider__title photos__title">Karczma monika</h2>
+            <div class="photos__container">
+                <div class="photos__first"> </div>
+                <div class="photos__second"> </div>
+                <div class="photos__third"> </div>
             </div>
-            <i class="material-icons overlay-arrow overlay-left photos__arrow-left">
+            <i class="material-icons photos__arrow photos__arrow-left">
                 keyboard_arrow_left
             </i>
-            <i class="material-icons overlay-arrow overlay-right photos__arrow-right">
+            <i class="material-icons photos__arrow photos__arrow-right">
                 keyboard_arrow_right
             </i>
         </div>
     </header>
     <main class="wrapper">
         <section class=" who-we-are" id="who-we-are">
-            <span class="section-second_title">O nas</span>
-            <h2 class="section-title who-we-are__title">Kim Jesteśmy</h2>
+            <span class="section__second-title">O nas</span>
+            <h2 class="section__title who-we-are__title">Kim Jesteśmy</h2>
             <p class="who_we_are-text who-we-are__text">Jesteśmy resteuracją tworzoną z pasją z 13 letnim
                 doświadczeniem. Oferujemy
                 usługi na najwyższym poziomie. U
@@ -78,8 +78,8 @@
                 :)</p>
         </section>
         <section class="organize" id="organize">
-            <span class="section-second_title">Co robimy</span>
-            <h2 class="organize__title section-title">Organizujemy</h2>
+            <span class="section__second-title">Co robimy</span>
+            <h2 class="organize__title section__title">Organizujemy</h2>
             <ul class="organize__list">
                 <li class="organize__wedding organize__li">
                     <img src="img/wedding-kiss.png" alt="">
@@ -110,10 +110,10 @@
                 </li>
             </ul>
         </section>
-        <section class="happy_clients happy-clients" id="happy-clients">
-            <span class="section-second_title">Opinie</span>
-            <h2 class="happy-clients__title section-title">Zadowoleni Klienci</h2>
-            <p class="happy_clients-text happy-clients__text">Zorganizowaliśmy wiele przyjęć i obsłużyliśmy jeszcze
+        <section class="happy-clients" id="happy-clients">
+            <span class="section__second-title">Opinie</span>
+            <h2 class="happy-clients__title section__title">Zadowoleni Klienci</h2>
+            <p class="happy-clients__text">Zorganizowaliśmy wiele przyjęć i obsłużyliśmy jeszcze
                 więcej szcześliwych
                 klientów. A o to opinie
                 niektórych z nich</p>
@@ -137,7 +137,7 @@
                     </i>
                     <p class="opinion__reviewer ">Piotr Korki</p>
                 </article>
-                <article class="opinion ">
+                <article class="opinion">
                     <p class="opinion__text">"Super atmosfera, miła obsługa, dobre jedzenie,
                         co sobota
                         muzyka
@@ -188,53 +188,70 @@
             </div>
         </section>
         <section class="galery" id="galery">
-            <span class="section-second_title">Zdjecia</span>
-            <h2 class="galery-title section-title">Galeria</h2>
-
-            <div class="galery-photo_wrapper">
-
-                <div class="galery-photo"><img src="img/glowna-sala-bar.jpeg" alt="" class="galery-photo-img"></div>
-                <div class="galery-photo"><img src="img/mala-sala.jpeg" alt="" class="galery-photo-img"></div>
-                <div class="galery-photo"><img src="img/glowna-sala-up.jpeg" alt="" class="galery-photo-img"></div>
-                <div class="galery-photo"><img src="img/glowna-sala.jpeg" alt="" class="galery-photo-img"></div>
-                <div class="galery-photo"><img src="img/budynek-noc.jpeg" alt="" class="galery-photo-img"></div>
-                <div class="galery-photo"><img src="img/budynek-noc-dal.jpeg" alt="" class="galery-photo-img"></div>
-                <div class="galery-photo"><img src="img/biale-krzesla.jpeg" alt="" class="galery-photo-img"></div>
+            <span class="section__second-title">Zdjecia</span>
+            <h2 class="galery__title section__title">Galeria</h2>
+            <div class="galery__photos">
+                <div class="galery__photo"><img src="img/glowna-sala-bar.jpeg" alt="Zdjęcie na bar" class="galery__img">
+                </div>
+                <div class="galery__photo"><img src="img/mala-sala.jpeg" alt="Zdjęcie zastawionego stołu na małej sali"
+                        class="galery__img"></div>
+                <div class="galery__photo"><img src="img/glowna-sala-up.jpeg"
+                        alt="Zdjęcie zastawionego stołu na przyjęcie na głównej sali " class="galery__img"></div>
+                <div class="galery__photo"><img src="img/glowna-sala.jpeg" alt="Zdjęcie głownej sali"
+                        class="galery__img"></div>
+                <div class="galery__photo"><img src="img/budynek-noc.jpeg" alt="Zdjęcie budynku nocą"
+                        class="galery__img"></div>
+                <div class="galery__photo"><img src="img/budynek-noc-dal.jpeg" alt="Zdjęcie budynku nocą z daleka"
+                        class="galery__img"></div>
+                <div class="galery__photo"><img src="img/biale-krzesla.jpeg"
+                        alt="Zdjęcie zastawionego stołu na przyjęcie na drugiej dużej sali" class="galery__img"></div>
             </div>
         </section>
         <section class="contact" id="contact">
-            <span class="section-second_title">Rezerwacja</span>
-            <h2 class="contact-title section-title">Kontakt</h2>
-            <div class="contact-content">
-                <div class="contact-content-information">
-                    <div class="content-information-opening_hours">
-                        <h3 class="information-opening_hours-title">Godziny Otwarcia</h3>
-                        <p class="information-opening_hours-monday">Poniedziałek 12:00-00:00</p>
-                        <p class="information-opening_hours-tuesday">Wtorek 12:00-00:00</p>
-                        <p class="information-opening_hours-wednesday">Środa 12:00-00:00</p>
-                        <p class="information-opening_hours-thursday">Czwartek 12:00-00:00</p>
-                        <p class="information-opening_hours-friday">Piątek 12:00-00:00</p>
-                        <p class="information-opening_hours-saturday">Sobota 12:00-00:00</p>
-                        <p class="information-opening_hours-sunday">Niedziela 12:00-00:00</p>
+            <span class="section__second-title">Rezerwacja</span>
+            <h2 class="contact__title section__title">Kontakt</h2>
+            <div class="contact__content">
+                <div class="contact__information">
+                    <div class="opening-hours">
+                        <h3 class="opening-hours__title">Godziny Otwarcia</h3>
+                        <ul class="opening hours__days">
+                            <li class="opening-hours__monday ">Poniedziałek 12:00-00:00
+                            </li>
+                            <li class="opening-hours__tuesday">Wtorek 12:00-00:00</li>
+                            <li class="opening-hours__wednesday">Środa 12:00-00:00
+                            </li>
+                            <li class="opening-hours__thursday">Czwartek 12:00-00:00
+                            </li>
+                            <li class="opening-hours__friday">Piątek 12:00-00:00</li>
+                            <li class="opening-hours__saturday">Sobota 12:00-00:00
+                            </li>
+                            <li class="opening-hours__sunday">Niedziela 12:00-00:00
+                            </li>
+                        </ul>
                     </div>
-                    <div class="content-information-reservation">
-                        <h3 class="information-reservation-title">Chcesz dokonać rezerwacji albo dowiedzieć się
+                    <div class="reservation">
+                        <h3 class="reservation__title">Chcesz dokonać rezerwacji albo
+                            dowiedzieć się
                             więcej?
                             Zadzwoń pod wybrany numer:</h3>
-                        <p class="information-reservation-number information-reservation-number1">530 273 481</p>
-                        <p class="information-reservation-number">32 307 35 82</p>
-                        <p class="information-reservation-number">502 724 379</p>
+                        <ul class="reservation__numbers">
+                            <li class="reservation__number reservation__number--main">530
+                                273 481</li>
+                            <li class="reservation__number">32 307 35 82</li>
+                            <li class="reservation__number">502 724 379</li>
+                        </ul>
                     </div>
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5100.022583322853!2d19.175880467816096!3d50.273047771773314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716db21b4990139%3A0xfda55ca7a2c4ae4a!2sMonika.%20Karczma!5e0!3m2!1spl!2spl!4v1572098881769!5m2!1spl!2spl"
-                    width="800" height="650" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+                    width="800" height="650" frameborder="0" style="border:0;" allowfullscreen=""
+                    class="contact__map"></iframe>
             </div>
 
         </section>
     </main>
-    <footer>
-        <div class="footer-icons">
+    <footer class="page-information">
+        <div class="page-information__icons">
             <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
                 from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             <div>Icons made by <a href="https://www.flaticon.com/authors/ddara" title="dDara">dDara</a> from <a
@@ -248,7 +265,8 @@
                 from
                 <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
-        <p class="site_author">Twórca: <a href="mailto:kub4k1@gmail.com">Kub4k1</a></p>
+        <p class="page-information__author">Twórca: <a href="mailto:kub4k1@gmail.com"
+                class="page-information__author-name">Kub4k1</a></p>
 
     </footer>
 

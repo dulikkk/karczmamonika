@@ -5,6 +5,10 @@
     font-family: 'Source Sans Pro', arial, sans-serif;
 }
 
+ul{
+   list-style: none; 
+}
+
 .site-title{
     position: absolute;
     z-index: 10;
@@ -94,7 +98,7 @@ li.slick-active button {
     background-color: #CF1D16;
 }
 
-.overlay-arrow{
+.photos__arrow{
     position: absolute;
     top: 45%;
     color: #ccc;
@@ -112,7 +116,7 @@ li.slick-active button {
 
 .menu{ 
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100vw;  
@@ -121,7 +125,7 @@ li.slick-active button {
 
 .fixed-menu{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: 80px;
     top: 0;
@@ -138,19 +142,18 @@ li.slick-active button {
     color: #fff;
 }
 
-.menu-list{
+.menu__list{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    list-style: none;
 }
 
-.menu-list li{
+.menu__list li{
     margin-left: 50px;
 }
 
-.menu-list li a{
+.menu__list-anchor{
     padding: 5px;
 
     font-size: 30px;
@@ -162,11 +165,11 @@ li.slick-active button {
     transition: .3s;
 }
 
-.menu-list li a:hover{
+.menu__list-anchor:hover{
     font-size: 40px;
 }
 
-.section-title{
+.section__title{
     font-size: 60px;
     color: #333;
 }
@@ -207,7 +210,7 @@ li.slick-active button {
     padding: 110px 0;
 }
 
-.section-second_title{ 
+.section__second-title{ 
     font-size: 70px;
     font-family: 'Alex Brush', cursive;
     color: #CF1D16;
@@ -252,7 +255,7 @@ li.slick-active button {
 
 
 
-.happy_clients{
+.happy-clients{
     position: relative;
 
     padding: 110px 0 100px;
@@ -309,7 +312,7 @@ li.slick-active button {
     right: 0;
 }
 
-article.happy_clients-active_opinion{
+article.opinion--active{
     display: block;
     animation: menu 1s linear;
 }
@@ -344,17 +347,17 @@ article.happy_clients-active_opinion{
     padding-top: 110px;
 }
 
-.galery-photo-img{
+.galery__img{
     width: 100%;
     height: auto;
 }
 
-.galery-photo{
+.galery__photo{
     flex-basis: 45%;
     margin-top: 50px;
 }
 
-.galery-photo_wrapper{
+.galery__photos{
     margin: 30px 0 110px;
 
     display: flex;
@@ -371,7 +374,7 @@ article.happy_clients-active_opinion{
     background-color: #F8F9FA;
 }
 
-.contact-content{
+.contact__content{
     width: 100%;
 
     margin-top: 60px;
@@ -381,36 +384,36 @@ article.happy_clients-active_opinion{
     align-items: flex-start;
 }
 
-.contact-content-information{
+.contact__information{
 
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.information-opening_hours-title{
+.opening-hours__title{
     margin-bottom: 18px;
 }
 
-.content-information-opening_hours *,
-.information-reservation-number{
+.opening-hours *,
+.reservation__number{
     font-size: 30px;
     margin-top: 5px;
 }
 
-.content-information-reservation{
+.reservation{
     margin-top: 10%;
 
     font-size: 20px;
    
 }
 
-.information-reservation-title{
+.reservation__title{
     padding: 0 20px;
     margin-bottom: 18px;
 }
 
-.information-reservation-number1{
+.reservation__number--main{
     font-weight: bold;
 }
 
@@ -423,7 +426,7 @@ footer{
     background-color: #000;
 }
 
-.footer-icons{
+.page-information__icons{
     width: 50%;
     height: 100%;
     display: flex;
@@ -432,16 +435,11 @@ footer{
     flex-wrap: wrap;
 }
 
-footer *{
+.page-information *{
     font-size: 10px;
     color: #888;
 }
-
-.visitors_counter{
-    display: none;
-}
-
-.site_author, .site_author a{
+.page-information__author, .page-information__author-name{
     font-size: 10px;
     margin-right: 10px;
 }
@@ -457,16 +455,16 @@ footer *{
 }
 
 @media(max-width:1600px){
-    .menu-list{
+    .menu__list{
         justify-content: flex-end;
 
         padding-right: 3%;
     }
-    .menu-list li a{
+    .menu__list-anchor{
     font-size: 25px;
     }
 
-    .map{
+    .contact__map{
         width: 600px;
 
         margin-right: 10px;
@@ -475,16 +473,13 @@ footer *{
 
 
 @media(max-width:1250px){
-    .slider-title{
+    .slider__title{
         font-size: 140px;
     }
-    .site-title a:hover{
+    .site-title__anchor:hover{
         font-size: 34px;
     }
-    .slider-title-sylvester{
-        font-size: 90px;
-    }
-    .hamburger{
+    .menu__hamburger{
         display: inline-block;
 
         margin-right: 20px;
@@ -494,7 +489,7 @@ footer *{
         cursor: pointer;
         
     }
-    .hamburger_inner{
+    .menu__hamburger-inner{
         font-size: 50px;
     }
     .menu{
@@ -503,27 +498,27 @@ footer *{
         text-align: right;
         background-color: #000;     
     }
-    .menu-list{  
+    .menu__list{  
         flex-direction: column;
 
         background-color: #000;
         transition: transform .2s ease-in-out;
         transform: translateY(-700px);
     }
-    .menu-list li{
+    .menu__list li{
         width: 100%;
         padding: 20px 0;
         border-bottom: 1px solid #fff;
 
         text-align: center;              
     }
-    .menu-list li a{
+    .menu__list-anchor{
         display: block;
         width: 100%;
 
         font-size: 30px;       
     }
-    .menu-list--active{
+    .menu__list--active{
         transform: translateY(0);
     }
     .opinions__arrow{    
@@ -535,13 +530,13 @@ footer *{
 
 
     @media(max-width:1024px){
-        .contact-content{
+        .contact__content{
             flex-direction: column;
         }
-        .contact-content-information{
+        .contact__information{
             width: 100%;
         }
-        .map{
+        .contact__map{
             width: 85%;
 
             margin: 50px auto 0;
@@ -549,9 +544,6 @@ footer *{
     }
 
     @media(max-width:900px){
-        .slider-title-sylvester{
-            font-size: 70px;
-        }
         .organize__list>*{
             margin-top: 40px;
 
@@ -568,14 +560,14 @@ footer *{
             margin-top: 0;
         }
 
-        .galery-photo{
+        .galery__photo{
             flex-basis: 90%;
         }
     }
 
 
     @media(max-width:620px){
-        .slider-title{
+        .slider__title{
             font-size: 90px;
         }
     }
@@ -588,19 +580,19 @@ footer *{
         .organize__list-communion{
             margin-top: 40px;
         }
-        .section-title{
+        .section__title{
             font-size: 50px;
         }
-        .section-second_title{
+        .section__second-title{
             font-size: 60px;
         }
         .happy-clients__title{
             font-size: 46px;
         }
-        .happy_clients-text{
+        .happy-clients__text{
             font-size: 20px;
         }
-        .opinion-text{
+        .opinion__text{
             font-size: 20px;
         }
 
@@ -610,25 +602,20 @@ footer *{
     }
 
     @media(max-width:500px){
-        .site-title a,
-        .site-title a:hover{
+        .site-title__anchor,
+        .site-title__anchor:hover{
             font-size: 24px;
         }
         .site-title{
             margin-top: 5px;
         }
-        .slider-title-sylvester{
-            padding-top: 33vh;
-
-            font-size: 40px;         
-        }
-        .hamburger_inner{
+        .menu__hamburger-inner{
             padding: 10px 0;
 
             font-size: 35px;        
         }
-        .content-information-opening_hours *,
-        .content-information-reservation *{
+        .opening-hours *,
+        .reservation *{
             font-size: 20px;
         }
         .opinions__arrow{
@@ -641,31 +628,31 @@ footer *{
 
 
     @media(max-width:410px){
-        .menu-list li a,
-        .menu-list li a:hover{
+        .menu__list-anchor,
+        .menu__list-anchor:hover{
             font-size: 16px;
         }
         .happy-clients__title{
             font-size: 30px;
         }
 
-        .happy_clients .section-second_title{
+        .happy-clients .section__second-title{
             font-size: 40px;
         }
-        .happy_clients-text{
+        .happy-clients__text{
             font-size: 19px;
         }
     }
 
 
     @media(max-width:380px){
-        .slider-title{
+        .slider__title{
             font-size: 60px;
         }
-        .section-title{
+        .section__title{
             font-size: 40px;
         }
-        .section-second_title{
+        .section__second-title{
             font-size: 50px;
         }
         .happy-clients__title{
@@ -688,11 +675,11 @@ footer *{
         .site-title{
             margin-top: -2px;
         }
-        .site-title a,
-        .site-title a:hover{
+        .site-title__anchor,
+        .site-title__anchor:hover{
             font-size: 18px;
         }
-        .hamburger_inner{
+        .menu__hamburger-inner{
             font-size: 23px;
         }
     }

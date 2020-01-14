@@ -1,17 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     const nav = document.querySelector('.menu');
-    const ul = document.querySelector('.menu-list');
-    const links = document.querySelectorAll('.menu-list-anchor');
+    const ul = document.querySelector('.menu__list');
+    const links = document.querySelectorAll('.menu__list-anchor');
     const siteTitle = document.querySelector('.site-title');
-    const siteTitleAnchor = siteTitle.querySelector('a');
-    const hamburger = document.querySelector('.hamburger');
+    const siteTitleAnchor = document.querySelector('.site-title__anchor');
+    const hamburger = document.querySelector('.menu__hamburger');
     function scrollInto() {
-        console.log(links)
-
         for (const a of links) {
             a.addEventListener('click', function (e) {
                 e.preventDefault();
-                ul.classList.remove('menu-list--active');
+                ul.classList.remove('menu__list--active');
                 const href = a.getAttribute('href');
                 const target = document.querySelector(href);
 
@@ -52,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function hamburgerMenu() {
         hamburger.addEventListener('click', function () {
-            ul.classList.toggle('menu-list--active');
+            ul.classList.toggle('menu__list--active');
         });
     }
 
