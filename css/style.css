@@ -117,7 +117,7 @@ li.slick-active button {
 
 .menu{ 
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     top: 0;
     left: 0;
     width: 100vw;  
@@ -126,7 +126,7 @@ li.slick-active button {
 
 .fixed-menu{
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     width: 100%;
     height: 80px;
     top: 0;
