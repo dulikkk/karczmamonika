@@ -16,17 +16,18 @@ ul{
 }
 
 .site-title__anchor{
+    display: block;
     text-decoration: none;
     font-size: 34px;
     font-family: 'Alex Brush', cursive;
     color: #fff;
     transition: .3s;
-        text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.1em 0.1em 0.2em;
     cursor: pointer;
 }
 
 .site-title__anchor:hover{
-    font-size: 45px;
+    transform: scale(1.2);
 }
 
 .photos__first,
@@ -40,16 +41,17 @@ ul{
 }
 
 .photos__first{
-    background-image: url(../img/glowna-sala.jpeg);
+    background-image: url(../img/glowna-sala.jpg);
   
 }
 
 .photos__second{
-    background-image: url(../img/glowna-sala-bar.jpeg);
+    background-image: url(../img/budynek-noc.jpg);
 }
 
 .photos__third{
-    background-image: url(../img/budynek-noc.jpeg);
+    background-image: url(../img/glowna-sala-bar.jpg);
+    
 }
 
 .photos__title{
@@ -155,6 +157,8 @@ li.slick-active button {
 }
 
 .menu__list-anchor{
+    display: block;
+
     padding: 5px;
 
     font-size: 30px;
@@ -167,7 +171,7 @@ li.slick-active button {
 }
 
 .menu__list-anchor:hover{
-    font-size: 40px;
+    transform: scale(1.3);
 }
 
 .section__title{
@@ -513,6 +517,11 @@ footer{
 
         text-align: center;              
     }
+
+    li.menu__contact{
+        border: none;
+    }
+
     .menu__list-anchor{
         display: block;
         width: 100%;
