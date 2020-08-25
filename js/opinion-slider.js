@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         this.getOpinionSlider();
         this.changeSlide(this.currentSlide);
 
-    }
+    };
 
     Slider.prototype.getOpinionSlider = function () {
         this.prev = document.querySelector(this.params.leftClass);
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.changeSlide(Number(dot.dataset.index));
             }.bind(this));
         }
-    }
+    };
 
     Slider.prototype.changeSlide = function (index) {
 
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         this.time = setTimeout(function () {
             this.slideNext();
         }.bind(this), 6000);
-    }
+    };
 
     Slider.prototype.slidePrev = function () {
         this.currentSlide--;
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.currentSlide = this.slides.length - 1;
         }
         this.changeSlide(this.currentSlide);
-    }
+    };
 
     Slider.prototype.slideNext = function () {
         this.currentSlide++;
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.currentSlide = 0;
         }
         this.changeSlide(this.currentSlide);
-    }
+    };
 
     const HappyClientsParams = {
         leftClass: ".opinions__left-arrow",
@@ -76,6 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
         activeSlidesClass: "opinion--active",
         dotsClass: ".opinions__dot",
         activeDotsClass: "opinions__dot--active"
-    }
+    };
     const happyClientsSlider = new Slider(HappyClientsParams);
-})
+});
